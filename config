@@ -6,3 +6,5 @@ background-blur = true
 #window-decoration = none
 macos-titlebar-style = hidden
 
+#blueprint, chalkboard, microchip, glass, holographic, paper, retro, xray
+macos-icon = glass
