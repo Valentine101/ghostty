@@ -3,6 +3,8 @@ theme = tokyonight-storm
 background-opacity = 0.5
 background-blur = true
 
+font-size = 18
+
 #window-decoration = none
 macos-titlebar-style = hidden
 
