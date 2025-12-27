@@ -10,3 +10,6 @@ macos-titlebar-style = hidden
 
 #blueprint, chalkboard, microchip, glass, holographic, paper, retro, xray
 macos-icon = glass
+
+window-height = 30
+window-width = 120
