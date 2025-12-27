@@ -1,4 +1,4 @@
-theme = tokyonight-storm
+theme = tokyonight storm
 
 background-opacity = 0.5
 background-blur = true
