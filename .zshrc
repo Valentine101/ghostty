@@ -7,6 +7,9 @@ export LC_ALL="en_US.UTF-8"
 #set starship config file location
 export STARSHIP_CONFIG=~/.config/ghostty/starship.toml
 
+#Makes Claude command work
+export PATH="$HOME/.local/bin:$PATH"
+
 # Docker autocomplete
 FPATH="$HOME/.docker/completions:$FPATH"
 autoload -Uz compinit
