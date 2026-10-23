@@ -30,12 +30,24 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Auto-start tmux with custom config if it exists
-if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]; then
-  CUSTOM_TMUX_CONF="$HOME/.config/ghostty/tmux.conf"
+#if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]; then
+#  CUSTOM_TMUX_CONF="$HOME/.config/ghostty/tmux.conf"
+#
+#  if [ -f "$CUSTOM_TMUX_CONF" ]; then
+#    tmux -f "$CUSTOM_TMUX_CONF" new-session -A -s default
+#  else
+#    tmux new-session -A -s default
+#  fi
+#fi
 
-  if [ -f "$CUSTOM_TMUX_CONF" ]; then
-    tmux -f "$CUSTOM_TMUX_CONF" new-session -A -s default
-  else
-    tmux new-session -A -s default
-  fi
-fi
+# Added by Antigravity IDE
+export PATH="/Users/val/.antigravity-ide/antigravity-ide/bin:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="/Users/val/.local/share/solana/install/active_release/bin:$PATH"
+
+
